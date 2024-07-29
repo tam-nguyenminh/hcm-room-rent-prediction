@@ -37,7 +37,7 @@ sqrmetre_slt = st.slider('Select an square metre value.', min_value=1, max_value
 st.write("Selected square metre", sqrmetre_slt)
 
 # add model
-with open(path + 'hcm_room_price_prediction_model.pickle', 'rb') as f:
+with open('hcm_room_price_prediction_model.pickle', 'rb') as f:
     model = pickle.load(f)
 
 def predict_price(district, sqr_meter):
