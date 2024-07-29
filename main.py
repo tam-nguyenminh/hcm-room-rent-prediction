@@ -14,4 +14,4 @@ else:
     show_about_page()
 
 
-# pg.run()st
+pg.run()
