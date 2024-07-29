@@ -12,7 +12,7 @@ path = 'C:/Users/84393/OneDrive - CÔNG TY TNHH OFFICIENCE/PYTHON/ML_House_Rent/
 # import list of districts
 def load_features():
     
-    f = open(path + 'columns.json')
+    f = open('columns.json')
     features = json.load(f)
     feature_list = features['data_columns']
     dist_list = features['data_columns'][1:]
@@ -23,7 +23,7 @@ feature_list, dist_list = load_features()
 
 # add model
 def load_model():
-    with open(path + 'hcm_room_price_prediction_model.pickle', 'rb') as f:
+    with open('hcm_room_price_prediction_model.pickle', 'rb') as f:
         model = pickle.load(f)
     return model 
 
