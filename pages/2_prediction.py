@@ -64,3 +64,5 @@ def show_predict_page():
 
     st.subheader(f'Predicted price (million VND): ')
     st.header(f':red[{predicted_val}]')
+
+show_predict_page()
