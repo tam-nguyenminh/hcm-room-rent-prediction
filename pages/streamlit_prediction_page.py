@@ -15,8 +15,8 @@ st.markdown('Estimator used in this training is :green[RandomForest].:sunflower:
 
 
 # import list of districts
-path = 'C:/Users/84393/OneDrive - CÔNG TY TNHH OFFICIENCE/PYTHON/ML_House_Rent/'
-f = open(path + 'columns.json')
+# path = 'C:/Users/84393/OneDrive - CÔNG TY TNHH OFFICIENCE/PYTHON/ML_House_Rent/'
+f = open('columns.json')
 features = json.load(f)
 feature_list = features['data_columns']
 dist_list = features['data_columns'][1:]
