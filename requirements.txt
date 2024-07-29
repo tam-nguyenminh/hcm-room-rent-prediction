@@ -4,5 +4,4 @@ numpy==2.0.0
 pandas==2.2.2
 scikit-learn==1.5.0
 seaborn==0.13.2
-json
-pickle
+json==0.5
