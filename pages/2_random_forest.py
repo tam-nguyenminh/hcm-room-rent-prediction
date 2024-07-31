@@ -38,7 +38,7 @@ def predict_price(district, sqr_meter):
 
 def show_predict_page():
     st.title('Room for Rent Price Prediction')
-    st.head(':green[RandomForest] :sunflower:')
+    st.header(':green[RandomForest] :sunflower:')
     # st.subheader('This is to predict room renting price in Ho Chi Minh city. ', 
     #         help='help icon',
     #         divider='blue')
