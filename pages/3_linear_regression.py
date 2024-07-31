@@ -37,6 +37,7 @@ def predict_price(district, sqr_meter):
     return x.reshape(1,-1)
 
 def show_predict_page():
+    st.title('Room for Rent Price Prediction')
     st.title(':green[LINEAR REGRESSION] :chart_with_upwards_trend:')
     # st.subheader('This is to predict room renting price in Ho Chi Minh city. ', 
     #         help='help icon',
