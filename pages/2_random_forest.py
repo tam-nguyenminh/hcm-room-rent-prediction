@@ -4,10 +4,7 @@ import numpy as np
 import json
 import pickle
 
-
-
 path = 'C:/Users/84393/OneDrive - CÔNG TY TNHH OFFICIENCE/PYTHON/ML_House_Rent/'
-
 
 # import list of districts
 def load_features():
@@ -40,12 +37,12 @@ def predict_price(district, sqr_meter):
     return x.reshape(1,-1)
 
 def show_predict_page():
-    st.title('Room-for-Rent Price Prediction')
-    st.subheader('This is to predict room renting price in Ho Chi Minh city. ', 
-            help='help icon',
-            divider='blue')
+    st.title(':green[RandomForest] :sunflower:')
+    # st.subheader('This is to predict room renting price in Ho Chi Minh city. ', 
+    #         help='help icon',
+    #         divider='blue')
 
-    st.markdown('Estimator used in this training is :green[RandomForest].:sunflower:')
+    # st.markdown('Estimator used in this training is :green[RandomForest].:sunflower:')
     # create option list of district
     st.subheader('Select a district.')
     dist_slt = st.selectbox(f'Now select a district', dist_list)
@@ -55,7 +52,7 @@ def show_predict_page():
 
     # create slider of square metre
     st.subheader('Select a square metre value.')
-    sqrmetre_slt = st.slider('Select an square metre value.', min_value=1, max_value=50, step=1)
+    sqrmetre_slt = st.slider('Select an square metre value.', min_value=10, max_value=40, step=1)
     st.write("Selected square metre", sqrmetre_slt)
 
     new_value = predict_price(dist_slt, sqrmetre_slt)
