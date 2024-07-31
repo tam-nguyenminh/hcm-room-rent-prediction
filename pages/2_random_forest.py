@@ -53,7 +53,7 @@ def show_predict_page():
     # create slider of square metre
     st.subheader('Select a square metre value.')
     sqrmetre_slt = st.slider('Select an square metre value.', min_value=10, max_value=40, step=1)
-    st.write("Selected square metre", sqrmetre_slt)
+    # st.write("Selected square metre", sqrmetre_slt)
 
     new_value = predict_price(dist_slt, sqrmetre_slt)
 
