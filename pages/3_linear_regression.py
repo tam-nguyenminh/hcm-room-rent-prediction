@@ -4,8 +4,6 @@ import numpy as np
 import json
 import pickle
 
-path = 'C:/Users/84393/OneDrive - CÔNG TY TNHH OFFICIENCE/PYTHON/ML_House_Rent/'
-
 # import list of districts
 def load_features():
     
